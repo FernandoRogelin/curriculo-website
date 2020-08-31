@@ -20,7 +20,7 @@
           target="_blank"
           class="Content-body-link"
           href="https://github.com/FernandoRogelin/curriculo-website"
-        >Curriculo-website - website que contém todo o meu currículo</a>
+        >Curriculo-website - Repositório que contém todo o meu currículo</a>
       </div>
     </div>
   </Menu>
