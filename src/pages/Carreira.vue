@@ -4,19 +4,23 @@
       <div class="Content-header">
         <h1 class="Content-header-title">Experiências</h1>
       </div>
-      <div v-for="carreira in carreiras" :key="carreira.id" class="Content-body">
+      <div v-for="experience in experiences" :key="experience.id" class="Content-body">
         <Content
-          :time="carreira.time"
-          :title="carreira.title"
-          :company="carreira.company"
-          :technologies="carreira.technologies"
-        >{{ carreira.text }}</Content>
+          :time="experience.time"
+          :title="experience.title"
+          :company="experience.company"
+          :technologies="experience.technologies"
+        >{{ experience.text }}</Content>
       </div>
       <div class="Content-header">
         <h1 class="Content-header-title">Projetos</h1>
       </div>
       <div class="Content-body">
-        <p>Ainda não possuo projetos pessoais disponíveis.</p>
+        <a
+          target="_blank"
+          class="Content-body-link"
+          href="https://github.com/FernandoRogelin/curriculo-website"
+        >Curriculo-website - website que contém todo o meu currículo</a>
       </div>
     </div>
   </Menu>
@@ -24,14 +28,14 @@
 
 <script>
 import Content from "~/components/Content";
-import Carreira from "~/utils/carreiras";
+import Experience from "~/utils/experiences";
 
 export default {
   metaInfo: {
     title: "Carreira",
   },
   data: () => ({
-    carreiras: Carreira,
+    experiences: Experience,
   }),
   components: {
     Content,
@@ -59,6 +63,20 @@ export default {
   &-body {
     width: 100%;
     margin-top: 50px;
+
+    &-link {
+      color: $calypso;
+      width: fit-content;
+      text-decoration: none;
+
+      &:hover {
+        border-bottom: 1px solid $calypso;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
   }
 }
 </style>

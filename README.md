@@ -1,14 +1,17 @@
-# Default starter for Gridsome
+# Curriculo Web
 
-This is the project you get when you run `gridsome create new-project`.
+Este projeto tem como principal função, apresentar o código que foi usado na criação do meu Curriculo-web e foi criado com o boilerplate do gridsome `gridsome create new-project`.
 
-### 1. Install Gridsome CLI tool if you don't have
+### 1. Primeiramente clone o repositório
 
-`npm install --global @gridsome/cli`
+`git clone https://github.com/FernandoRogelin/curriculo-website.git`
 
-### 2. Create a Gridsome project
+### 2. Instale as dependências
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+`yarn install | npm install`
+
+### 3. Rode o projeto e acesse ele web
+
+1. `yarn develop | npm run develop`
+2. Abra ele em `localhost:8080`
+3. Seja feliz codando 🎉🙌
