@@ -1,51 +1,73 @@
 <template>
   <div class="Wrapper">
-    <div class="Wrapper-close" :class="{ close:disable }" @click="disable = !disable">
-      <div class="Wrapper-close-hamburguer" :class="{ ex:disable }" />
+    <div
+      class="Wrapper-close"
+      :class="{ close: disable }"
+      @click="disable = !disable"
+    >
+      <div class="Wrapper-close-hamburguer" :class="{ ex: disable }" />
     </div>
     <div class="Wrapper-menu" :class="{ disable }">
       <div class="Wrapper-menu-photo" />
       <div class="Wrapper-menu-options">
         <ul class="Wrapper-menu-options-list">
-          <li :key="menu.id" v-for="menu in menus" class="Wrapper-menu-options-line">
+          <li
+            :key="menu.id"
+            v-for="menu in $t('menu')"
+            class="Wrapper-menu-options-line"
+          >
             <div class="Wrapper-menu-options-click">
               <font-awesome-icon
                 icon="angle-down"
                 class="Wrapper-menu-options-click-icon"
-                :class="{ rotate:menu.path === currentRoute }"
               />
-              <g-link :to="menu.path" class="Wrapper-menu-options-click-link">{{ menu.name }}</g-link>
+              <g-link
+                :to="$tp(menu.path)"
+                class="Wrapper-menu-options-click-link"
+                >{{ menu.name }}</g-link
+              >
             </div>
-            <ul
-              class="Wrapper-menu-options-list-subMenu"
-              v-if="menu.subMenu && menu.path === currentRoute"
-            >
-              <li
-                :key="subMenu.id"
-                v-for="subMenu in menu.subMenuOptions"
-                class="Wrapper-menu-options-subMenu-itens"
-              >{{ subMenu.name }}</li>
-            </ul>
           </li>
         </ul>
       </div>
+      <div class="Wrapper-menu-languages">
+        <button
+          @click="changeLocale('pt')"
+          class="Wrapper-menu-languages-link"
+          :class="{ language: this.$i18n.locale.toString() === 'pt-br' }"
+        >
+          Português
+        </button>
+        |
+        <button
+          @click="changeLocale('en')"
+          class="Wrapper-menu-languages-link"
+          :class="{ language: this.$i18n.locale.toString() === 'en-eu' }"
+        >
+          English
+        </button>
+      </div>
     </div>
-    <div class="Wrapper-screens" :class="{ closeSubmenu:disable }">
+    <div class="Wrapper-screens" :class="{ closeSubmenu: disable }">
       <slot />
     </div>
   </div>
 </template>
 
 <script>
-import Menu from "~/utils/Menu";
-
 export default {
   name: "Menu",
   data: () => ({
-    menus: Menu,
     disable: false,
     currentRoute: window.location.pathname,
   }),
+  methods: {
+    changeLocale(locale) {
+      this.$router.push({
+        path: this.$tp(this.$route.path, locale, true),
+      });
+    },
+  },
 };
 </script>
 
@@ -186,6 +208,19 @@ query {
         padding: 0 0 0 15px;
       }
     }
+
+    &-languages {
+      margin-top: 40px;
+
+      &-link {
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        cursor: pointer;
+        background-color: transparent;
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
   }
 }
 
@@ -225,7 +260,7 @@ query {
   }
 }
 
-.rotate {
-  transform: rotate(0deg);
+.language {
+  color: $white;
 }
 </style>

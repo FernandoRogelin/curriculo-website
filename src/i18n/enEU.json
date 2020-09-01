@@ -1,0 +1,26 @@
+{
+  "profession": "Front-End Developer",
+  "age": "Age: 23 Years",
+  "phone": "Phone",
+  "contact": "Contact",
+  "location": "Location",
+  "myself": "I am a programmer dedicated to learning new things, new knowledge inspire me to grow every day.",
+  "goOut": "Love to go out with my friends and my family to drink a beer and talk about many things.",
+  "menu": [
+    {
+      "id": 1,
+      "path": "/",
+      "name": "About"
+    },
+    {
+      "id": 2,
+      "path": "/carreira",
+      "name": "Career"
+    },
+    {
+      "id": 3,
+      "path": "/aprendizados",
+      "name": "Learnings"
+    }
+  ]
+}

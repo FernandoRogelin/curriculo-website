@@ -13,7 +13,9 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 library.add(faTwitter, faLinkedin, faFacebook, faGithub, faSteam, faAngleDown);
 
-export default function(Vue, { router, head, isClient }) {
+export default function(Vue, { router, head, isClient, appOptions }) {
   Vue.component("Menu", Menu);
   Vue.component("font-awesome-icon", FontAwesomeIcon);
+  appOptions.i18n.setLocaleMessage("pt-br", require("./i18n/ptBR.json"));
+  appOptions.i18n.setLocaleMessage("en-eu", require("./i18n/enEU.json"));
 }

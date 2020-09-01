@@ -1,9 +1,3 @@
-// This is where project configuration and plugin options are located.
-// Learn more: https://gridsome.org/docs/config
-
-// Changes here require a server restart.
-// To restart press CTRL + C in terminal and run `gridsome develop`
-
 module.exports = {
   css: {
     loaderOptions: {
@@ -14,5 +8,16 @@ module.exports = {
     },
   },
   siteName: "Fernando Rogelin",
-  plugins: [],
+  plugins: [
+    {
+      use: "gridsome-plugin-i18n",
+      options: {
+        locales: ["pt-br", "en-eu"],
+        pathAliases: { "pt-br": "pt", "en-eu": "en" },
+        fallbackLocale: "pt-br",
+        defaultLocale: "pt-br",
+        messages: {},
+      },
+    },
+  ],
 };

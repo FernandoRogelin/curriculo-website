@@ -1,0 +1,26 @@
+{
+  "profession": "Desenvolvedor Front-End",
+  "age": "Idade: 23 Anos",
+  "phone": "Telefone",
+  "contact": "Contato",
+  "location": "Localização",
+  "myself": "Eu sou um programador dedicado a aprender novas tecnologias, novos conhecimentos me inspiram a crescer todos os dias.",
+  "goOut": "Amo sair com meus amigos e minha família para bater um bom papo e tomar uma cerveja das boas.",
+  "menu": [
+    {
+      "id": 1,
+      "path": "/",
+      "name": "Sobre"
+    },
+    {
+      "id": 2,
+      "path": "/carreira",
+      "name": "Carreira"
+    },
+    {
+      "id": 3,
+      "path": "/aprendizados",
+      "name": "Aprendizados"
+    }
+  ]
+}
