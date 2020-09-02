@@ -40,7 +40,6 @@ export default {
   name: "Menu",
   data: () => ({
     disable: false,
-    currentRoute: window.location.pathname,
   }),
   methods: {
     changeLocale(locale) {
