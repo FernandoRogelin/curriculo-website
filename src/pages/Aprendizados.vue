@@ -1,9 +1,7 @@
 <template>
   <Menu>
     <div class="Content">
-      <div class="Content-header">
-        <h1 class="Content-header-title">{{ $t("skill") }}</h1>
-      </div>
+      <Title title="skill" />
       <div class="Content-skills">
         <div class="Content-skills-wrapper" v-for="skill in $t('skills')" :key="skill.id">
           <p class="Content-skills-wrapper-technologies">{{ skill.technologie }}</p>
@@ -16,9 +14,7 @@
           </ul>
         </div>
       </div>
-      <div class="Content-header">
-        <h1 class="Content-header-title">{{ $t("course") }}</h1>
-      </div>
+      <Title title="course" />
       <div class="Content-body">
         <a
           target="_blank"
@@ -28,9 +24,7 @@
           class="Content-body-link"
         >{{ course.name }}</a>
       </div>
-      <div class="Content-header">
-        <h1 class="Content-header-title">{{ $t("college") }}</h1>
-      </div>
+      <Title title="college" />
       <div class="Content-body">
         <Content time="2015 - 2019" :title="$t('system')" company="UniRitter">{{ $t("trained") }}</Content>
       </div>
@@ -41,6 +35,7 @@
 <script>
 import Skill from "~/utils/skills";
 import Course from "~/utils/courses";
+import Title from "~/components/Title";
 import Content from "~/components/Content";
 
 export default {
@@ -48,6 +43,7 @@ export default {
     title: "Aprendizados",
   },
   components: {
+    Title,
     Content,
   },
   data: () => ({

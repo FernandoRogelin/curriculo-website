@@ -1,39 +1,30 @@
 <template>
   <Menu>
     <div class="Content">
-      <div class="Content-header">
-        <h1 class="Content-header-title">FERNANDO HENRIQUE ROGELIN FILHO</h1>
-        <p class="Content-header-subTitle">{{ $t("profession") }}</p>
-      </div>
+      <Title title="name" subTitle="profession" />
       <Card>
         <p class="Content-text">
           {{ $t("age") }}
-          <br />{{ $t("phone") }}: (51) 99602-2370 <br />{{ $t("contact") }}:
-          fernando.rogelin@hotmail.com <br />{{ $t("location") }}: Guaíba - Rio
-          Grande do Sul <br />{{ $t("myself") }} <br />{{ $t("goOut") }}
+          <br />
+          {{ $t("phone") }}: (51) 99602-2370
+          <br />
+          {{ $t("contact") }}:
+          fernando.rogelin@hotmail.com
+          <br />
+          {{ $t("location") }}: Guaíba - Rio
+          Grande do Sul
+          <br />
+          {{ $t("myself") }}
+          <br />
+          {{ $t("goOut") }}
         </p>
       </Card>
       <div class="Content-footer">
-        <SocialNetwork
-          icon="linkedin"
-          link="https://www.linkedin.com/in/fernando-rogelin/"
-        />
-        <SocialNetwork
-          icon="github"
-          link="https://github.com/FernandoRogelin"
-        />
-        <SocialNetwork
-          icon="twitter"
-          link="https://twitter.com/Nando_Rogelin"
-        />
-        <SocialNetwork
-          icon="facebook"
-          link="https://www.facebook.com/fernando.rogelin/"
-        />
-        <SocialNetwork
-          icon="steam"
-          link="https://steamcommunity.com/profiles/76561198011701372/"
-        />
+        <SocialNetwork icon="linkedin" link="https://www.linkedin.com/in/fernando-rogelin/" />
+        <SocialNetwork icon="github" link="https://github.com/FernandoRogelin" />
+        <SocialNetwork icon="twitter" link="https://twitter.com/Nando_Rogelin" />
+        <SocialNetwork icon="facebook" link="https://www.facebook.com/fernando.rogelin/" />
+        <SocialNetwork icon="steam" link="https://steamcommunity.com/profiles/76561198011701372/" />
       </div>
     </div>
   </Menu>
@@ -41,6 +32,7 @@
 
 <script>
 import Card from "~/components/Card";
+import Title from "~/components/Title";
 import SocialNetwork from "~/components/SocialNetwork";
 
 export default {
@@ -50,6 +42,7 @@ export default {
   },
   components: {
     Card,
+    Title,
     SocialNetwork,
   },
 };
@@ -61,20 +54,6 @@ export default {
   align-items: center;
   flex-direction: column;
   padding: 0 $paddingScreen;
-
-  &-header {
-    margin-top: 50px;
-
-    &-title {
-      color: $pigeonPost;
-      font-size: 2.6rem;
-      border-bottom: 1px solid;
-    }
-
-    &-subTitle {
-      color: $pigeonPost;
-    }
-  }
 
   &-text {
     color: $lynch;

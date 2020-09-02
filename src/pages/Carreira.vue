@@ -1,9 +1,7 @@
 <template>
   <Menu>
     <div class="Content">
-      <div class="Content-header">
-        <h1 class="Content-header-title">{{ $t("experience") }}</h1>
-      </div>
+      <Title title="experience" />
       <div v-for="experience in $t('experiences')" :key="experience.id" class="Content-body">
         <Content
           :time="experience.time"
@@ -12,9 +10,7 @@
           :technologies="experience.technologies"
         >{{ experience.text }}</Content>
       </div>
-      <div class="Content-header">
-        <h1 class="Content-header-title">{{ $t("project") }}</h1>
-      </div>
+      <Title title="project" />
       <div class="Content-body">
         <a
           target="_blank"
@@ -27,17 +23,15 @@
 </template>
 
 <script>
+import Title from "~/components/Title";
 import Content from "~/components/Content";
-import Experience from "~/utils/experiences";
 
 export default {
   metaInfo: {
     title: "Carreira",
   },
-  data: () => ({
-    experiences: Experience,
-  }),
   components: {
+    Title,
     Content,
   },
 };
@@ -49,16 +43,6 @@ export default {
   align-items: center;
   flex-direction: column;
   padding: 0 $paddingScreen;
-
-  &-header {
-    margin-top: 60px;
-
-    &-title {
-      color: $pigeonPost;
-      font-size: 2.6rem;
-      border-bottom: 1px solid;
-    }
-  }
 
   &-body {
     width: 100%;

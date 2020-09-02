@@ -1,4 +1,5 @@
 {
+  "name": "FERNANDO HENRIQUE ROGELIN FILHO",
   "profession": "Front-End Developer",
   "age": "Age: 23 Years",
   "phone": "Phone",
@@ -51,8 +52,8 @@
       "skills": ["Jenkins", "Webpcack", "Git"]
     }
   ],
-  "system": "Systems Analysis and Developer -",
-  "trained": "Trained in Systems Analysis and Developer",
+  "system": "Systems Analysis and Development -",
+  "trained": "Studied Systems Analysis and Development",
   "experience": "Experiences",
   "tech": "Technologies",
   "project": "Projects",
