@@ -9,7 +9,7 @@
       <slot />
     </p>
     <p v-if="technologies" class="Body-technologies">
-      Tecnologias:
+      {{ $t("tech") }}:
       <span class="Body-technologies-stack">{{ technologies }}</span>
     </p>
   </div>

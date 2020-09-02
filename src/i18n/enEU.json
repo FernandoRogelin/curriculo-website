@@ -22,5 +22,61 @@
       "path": "/aprendizados",
       "name": "Learnings"
     }
+  ],
+  "skill": "Skills",
+  "course": "Courses",
+  "college": "College",
+  "skills": [
+    {
+      "technologie": "Front-end",
+      "skills": [
+        "React",
+        "VueJS",
+        "AngularJS",
+        "Angular 5",
+        "JavaScript",
+        "ASP.NET"
+      ]
+    },
+    {
+      "technologie": "Back-end",
+      "skills": ["C#", "NodeJS"]
+    },
+    {
+      "technologie": "Tests",
+      "skills": ["Jest", "Cypress"]
+    },
+    {
+      "technologie": "Tools",
+      "skills": ["Jenkins", "Webpcack", "Git"]
+    }
+  ],
+  "system": "Systems Analysis and Developer -",
+  "trained": "Trained in Systems Analysis and Developer",
+  "experience": "Experiences",
+  "tech": "Technologies",
+  "project": "Projects",
+  "experiences": [
+    {
+      "company": "Compuletra",
+      "time": "May 2019 - Currently",
+      "title": "Software Developer -",
+      "technologies": "ReactJS, NodeJS, ASP.NET, C#, Jenkins",
+      "text": "Responsible for redoing the car survey software using the latest technology, with React and NodeJS. Administrative panels for internal company use."
+    },
+    {
+      "company": "Younner",
+      "time": "May 2019 - March 2020",
+      "title": "Software Developer -",
+      "technologies": "ReactJS, VueJS, Nodejs, Netlify, Heroku",
+      "text": "A Startup in which I worked on administrative panels and on several different projects, with different technologies."
+    },
+    {
+      "company": "ilegra",
+      "time": "March 2017 - March 2019",
+      "title": "Front-end Developer -",
+      "technologies": "AngularJS, ReactJS, NodeJS, Jest, Cypress",
+      "text": "Beginning of my career as a developer, I started as an intern, young talent as they call the company, just after 6 months of internship I was hired and went to the Agibank project, where I worked on the Internet Banking project, which is responsible for paying online slips , see your card bill, and more."
+    }
   ]
 }

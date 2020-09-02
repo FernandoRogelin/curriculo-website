@@ -2,22 +2,22 @@
   <Menu>
     <div class="Content">
       <div class="Content-header">
-        <h1 class="Content-header-title">Habilidades</h1>
+        <h1 class="Content-header-title">{{ $t("skill") }}</h1>
       </div>
       <div class="Content-skills">
-        <div class="Content-skills-wrapper" v-for="skill in skills" :key="skill.id">
+        <div class="Content-skills-wrapper" v-for="skill in $t('skills')" :key="skill.id">
           <p class="Content-skills-wrapper-technologies">{{ skill.technologie }}</p>
           <ul class="Content-skills-wrapper-list">
             <li
-              :key="item.id"
-              v-for="item in skill.items"
+              :key="skill.id"
+              v-for="skill in skill.skills"
               class="Content-skills-wrapper-list-item"
-            >{{ item }}</li>
+            >{{ skill }}</li>
           </ul>
         </div>
       </div>
       <div class="Content-header">
-        <h1 class="Content-header-title">Cursos</h1>
+        <h1 class="Content-header-title">{{ $t("course") }}</h1>
       </div>
       <div class="Content-body">
         <a
@@ -29,14 +29,10 @@
         >{{ course.name }}</a>
       </div>
       <div class="Content-header">
-        <h1 class="Content-header-title">Educação</h1>
+        <h1 class="Content-header-title">{{ $t("college") }}</h1>
       </div>
       <div class="Content-body">
-        <Content
-          time="2015 - 2019"
-          title="Análise e Desenvolvimento de Sistemas -"
-          company="UniRitter"
-        >Formado no tecnólogo de ADS.</Content>
+        <Content time="2015 - 2019" :title="$t('system')" company="UniRitter">{{ $t("trained") }}</Content>
       </div>
     </div>
   </Menu>

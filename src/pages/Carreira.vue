@@ -2,9 +2,9 @@
   <Menu>
     <div class="Content">
       <div class="Content-header">
-        <h1 class="Content-header-title">Experiências</h1>
+        <h1 class="Content-header-title">{{ $t("experience") }}</h1>
       </div>
-      <div v-for="experience in experiences" :key="experience.id" class="Content-body">
+      <div v-for="experience in $t('experiences')" :key="experience.id" class="Content-body">
         <Content
           :time="experience.time"
           :title="experience.title"
@@ -13,7 +13,7 @@
         >{{ experience.text }}</Content>
       </div>
       <div class="Content-header">
-        <h1 class="Content-header-title">Projetos</h1>
+        <h1 class="Content-header-title">{{ $t("project") }}</h1>
       </div>
       <div class="Content-body">
         <a

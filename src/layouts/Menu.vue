@@ -1,31 +1,16 @@
 <template>
   <div class="Wrapper">
-    <div
-      class="Wrapper-close"
-      :class="{ close: disable }"
-      @click="disable = !disable"
-    >
+    <div class="Wrapper-close" :class="{ close: disable }" @click="disable = !disable">
       <div class="Wrapper-close-hamburguer" :class="{ ex: disable }" />
     </div>
     <div class="Wrapper-menu" :class="{ disable }">
       <div class="Wrapper-menu-photo" />
       <div class="Wrapper-menu-options">
         <ul class="Wrapper-menu-options-list">
-          <li
-            :key="menu.id"
-            v-for="menu in $t('menu')"
-            class="Wrapper-menu-options-line"
-          >
+          <li :key="menu.id" v-for="menu in $t('menu')" class="Wrapper-menu-options-line">
             <div class="Wrapper-menu-options-click">
-              <font-awesome-icon
-                icon="angle-down"
-                class="Wrapper-menu-options-click-icon"
-              />
-              <g-link
-                :to="$tp(menu.path)"
-                class="Wrapper-menu-options-click-link"
-                >{{ menu.name }}</g-link
-              >
+              <font-awesome-icon icon="angle-down" class="Wrapper-menu-options-click-icon" />
+              <g-link :to="$tp(menu.path)" class="Wrapper-menu-options-click-link">{{ menu.name }}</g-link>
             </div>
           </li>
         </ul>
@@ -35,17 +20,13 @@
           @click="changeLocale('pt')"
           class="Wrapper-menu-languages-link"
           :class="{ language: this.$i18n.locale.toString() === 'pt-br' }"
-        >
-          Português
-        </button>
+        >Português</button>
         |
         <button
           @click="changeLocale('en')"
           class="Wrapper-menu-languages-link"
           :class="{ language: this.$i18n.locale.toString() === 'en-eu' }"
-        >
-          English
-        </button>
+        >English</button>
       </div>
     </div>
     <div class="Wrapper-screens" :class="{ closeSubmenu: disable }">
@@ -211,6 +192,7 @@ query {
 
     &-languages {
       margin-top: 40px;
+      color: $pigeonPost;
 
       &-link {
         border: none;
