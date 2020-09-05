@@ -92,6 +92,10 @@ export default {
         color: $pigeonPost;
         width: fit-content;
         border-bottom: 1px solid;
+
+        @media (max-width: $largeViewports) {
+          font-size: 1.2rem;
+        }
       }
 
       &-list {
@@ -103,6 +107,10 @@ export default {
           padding: 2px 0;
           font-size: 1rem;
           color: $calypso;
+
+          @media (max-width: $largeViewports) {
+            font-size: 0.9rem;
+          }
         }
       }
     }
@@ -118,6 +126,10 @@ export default {
       color: $calypso;
       width: fit-content;
       text-decoration: none;
+
+      @media (max-width: $largeViewports) {
+        font-size: 0.9rem;
+      }
 
       &:hover {
         border-bottom: 1px solid $calypso;

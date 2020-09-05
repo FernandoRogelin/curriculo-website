@@ -23,6 +23,16 @@ export default {
   border-radius: 100%;
   background-color: $ebonyClay;
 
+  @media (max-width: $largeViewports) {
+    width: 45px;
+    height: 45px;
+  }
+
+  @media (max-width: $smallViewports) {
+    width: 35px;
+    height: 35px;
+  }
+
   &-link {
     width: 100%;
     height: 100%;
@@ -34,6 +44,14 @@ export default {
     &-icon {
       color: $white;
       font-size: 1.8rem;
+
+      @media (max-width: $largeViewports) {
+        font-size: 1.5rem;
+      }
+
+      @media (max-width: $smallViewports) {
+        font-size: 1.2rem;
+      }
     }
   }
 }

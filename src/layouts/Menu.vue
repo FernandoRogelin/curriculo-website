@@ -66,6 +66,14 @@ query {
   &-screens {
     margin-left: 260px;
     transition: $transitionMenu;
+
+    @media (max-width: $largeViewports) {
+      margin-left: 240px;
+    }
+
+    @media (max-width: $smallViewports) {
+      margin-left: 0;
+    }
   }
 
   &-close {
@@ -80,6 +88,14 @@ query {
     justify-content: center;
     transition: $transitionMenu;
     background-color: $ebonyClay;
+
+    @media (max-width: $largeViewports) {
+      left: 240px;
+    }
+
+    @media (max-width: $smallViewports) {
+      display: none;
+    }
 
     &-hamburguer {
       width: 25px;
@@ -128,6 +144,14 @@ query {
     background-color: $blackPearl;
     border-right: 2px solid $black;
 
+    @media (max-width: $largeViewports) {
+      width: 240px;
+    }
+
+    @media (max-width: $smallViewports) {
+      display: none;
+    }
+
     &-photo {
       width: 150px;
       height: 150px;
@@ -137,6 +161,11 @@ query {
       background-position: center;
       background-repeat: no-repeat;
       background-image: url("../images/Photo.jpg");
+
+      @media (max-width: $largeViewports) {
+        width: 140px;
+        height: 140px;
+      }
     }
 
     &-options {
@@ -186,6 +215,10 @@ query {
         list-style: none;
         font-size: 1.1rem;
         padding: 0 0 0 15px;
+
+        @media (max-width: $largeViewports) {
+          font-size: 1rem;
+        }
       }
     }
 
@@ -215,13 +248,21 @@ query {
 }
 
 .disable {
-  transform: translateX($translateMenu);
   transition: $transitionMenu;
+  transform: translateX($translateMenu);
+
+  @media (max-width: $largeViewports) {
+    transform: translateX(-240px);
+  }
 }
 
 .close {
-  transform: translateX($translateMenu);
   transition: $transitionMenu;
+  transform: translateX($translateMenu);
+
+  @media (max-width: $largeViewports) {
+    transform: translateX(-240px);
+  }
 }
 
 .ex {

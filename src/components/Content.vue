@@ -30,27 +30,47 @@ export default {
 <style lang="scss" scoped>
 .Body {
   &-title {
-    color: $pigeonPost;
     font-size: 1.6rem;
+    color: $pigeonPost;
+
+    @media (max-width: $largeViewports) {
+      font-size: 1.4rem;
+    }
 
     &-company {
       color: $steelBlue;
       font-size: 1.2rem;
+
+      @media (max-width: $largeViewports) {
+        font-size: 1.1rem;
+      }
     }
   }
 
   &-time {
     font-size: 0.8rem;
+
+    @media (max-width: $largeViewports) {
+      font-size: 0.7rem;
+    }
   }
 
   &-text {
     margin-top: 20px;
+
+    @media (max-width: $largeViewports) {
+      font-size: 0.9rem;
+    }
   }
 
   &-technologies {
     margin-top: 30px;
     color: $steelBlue;
     font-weight: bold;
+
+    @media (max-width: $largeViewports) {
+      font-size: 0.9rem;
+    }
 
     &-stack {
       font-weight: normal;

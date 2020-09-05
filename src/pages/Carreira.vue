@@ -44,6 +44,10 @@ export default {
   flex-direction: column;
   padding: 0 $paddingScreen;
 
+  @media (max-width: $largeViewports) {
+    padding: 0 100px;
+  }
+
   &-body {
     width: 100%;
     margin-top: 50px;

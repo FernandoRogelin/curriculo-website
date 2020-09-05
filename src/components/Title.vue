@@ -28,12 +28,28 @@ export default {
   margin-top: 60px;
 
   &-header {
-    color: $pigeonPost;
     font-size: 2.6rem;
+    color: $pigeonPost;
     border-bottom: 1px solid;
+
+    @media (max-width: $largeViewports) {
+      font-size: 2rem;
+    }
+
+    @media (max-width: $smallViewports) {
+      font-size: 1.2rem;
+    }
 
     &-subTitle {
       color: $pigeonPost;
+
+      @media (max-width: $largeViewports) {
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: $smallViewports) {
+        font-size: 0.7rem;
+      }
     }
   }
 }

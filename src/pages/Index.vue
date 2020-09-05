@@ -55,9 +55,21 @@ export default {
   flex-direction: column;
   padding: 0 $paddingScreen;
 
+  @media (max-width: $largeViewports) {
+    padding: 0 100px;
+  }
+
+  @media (max-width: $smallViewports) {
+    padding: 0 40px;
+  }
+
   &-text {
     color: $lynch;
     line-height: 2.4;
+
+    @media (max-width: $largeViewports) {
+      font-size: 0.9rem;
+    }
   }
 
   &-footer {
