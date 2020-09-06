@@ -52,6 +52,7 @@ export default {
 .Content {
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
   flex-direction: column;
   padding: 0 $paddingScreen;
 
