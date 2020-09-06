@@ -60,6 +60,10 @@ export default {
   flex-direction: column;
   padding: 0 $paddingScreen;
 
+  @media (max-width: $smallViewports) {
+    padding: 0 40px;
+  }
+
   &-header {
     margin-top: 60px;
 
@@ -80,10 +84,18 @@ export default {
       &:not(:last-child) {
         padding-right: 30px;
         border-right: 1px solid $pigeonPost;
+
+        @media (max-width: $smallViewports) {
+          border-right: none;
+        }
       }
 
       &:not(:first-child) {
         padding-left: 30px;
+
+        @media (max-width: $smallViewports) {
+          padding-left: 0;
+        }
       }
 
       &-technologies {
@@ -129,6 +141,10 @@ export default {
 
       @media (max-width: $largeViewports) {
         font-size: 0.9rem;
+      }
+
+      @media (max-width: $smallViewports) {
+        font-size: 0.7rem;
       }
 
       &:hover {

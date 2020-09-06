@@ -37,12 +37,20 @@ export default {
       font-size: 1.4rem;
     }
 
+    @media (max-width: $smallViewports) {
+      font-size: 1.1rem;
+    }
+
     &-company {
       color: $steelBlue;
       font-size: 1.2rem;
 
       @media (max-width: $largeViewports) {
         font-size: 1.1rem;
+      }
+
+      @media (max-width: $smallViewports) {
+        font-size: 0.8rem;
       }
     }
   }
@@ -53,6 +61,10 @@ export default {
     @media (max-width: $largeViewports) {
       font-size: 0.7rem;
     }
+
+    @media (max-width: $smallViewports) {
+      font-size: 0.6rem;
+    }
   }
 
   &-text {
@@ -60,6 +72,10 @@ export default {
 
     @media (max-width: $largeViewports) {
       font-size: 0.9rem;
+    }
+
+    @media (max-width: $smallViewports) {
+      font-size: 0.7rem;
     }
   }
 
@@ -70,6 +86,10 @@ export default {
 
     @media (max-width: $largeViewports) {
       font-size: 0.9rem;
+    }
+
+    @media (max-width: $smallViewports) {
+      font-size: 0.7rem;
     }
 
     &-stack {

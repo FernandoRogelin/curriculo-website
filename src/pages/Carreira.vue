@@ -48,6 +48,10 @@ export default {
     padding: 0 100px;
   }
 
+  @media (max-width: $smallViewports) {
+    padding: 0 40px;
+  }
+
   &-body {
     width: 100%;
     margin-top: 50px;
@@ -56,6 +60,10 @@ export default {
       color: $calypso;
       width: fit-content;
       text-decoration: none;
+
+      @media (max-width: $smallViewports) {
+        font-size: 0.8rem;
+      }
 
       &:hover {
         border-bottom: 1px solid $calypso;

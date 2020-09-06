@@ -41,6 +41,9 @@ export default {
   data: () => ({
     disable: false,
   }),
+  mounted: function () {
+    if (window.screen.width <= 480) this.disable = true;
+  },
   methods: {
     changeLocale(locale) {
       this.$router.push({
@@ -94,7 +97,7 @@ query {
     }
 
     @media (max-width: $smallViewports) {
-      display: none;
+      left: 200px;
     }
 
     &-hamburguer {
@@ -149,7 +152,7 @@ query {
     }
 
     @media (max-width: $smallViewports) {
-      display: none;
+      width: 200px;
     }
 
     &-photo {
@@ -165,6 +168,11 @@ query {
       @media (max-width: $largeViewports) {
         width: 140px;
         height: 140px;
+      }
+
+      @media (max-width: $smallViewports) {
+        width: 120px;
+        height: 120px;
       }
     }
 
@@ -219,6 +227,10 @@ query {
         @media (max-width: $largeViewports) {
           font-size: 1rem;
         }
+
+        @media (max-width: $smallViewports) {
+          font-size: 0.9rem;
+        }
       }
     }
 
@@ -233,6 +245,10 @@ query {
         cursor: pointer;
         background-color: transparent;
         color: rgba(255, 255, 255, 0.5);
+
+        @media (max-width: $smallViewports) {
+          font-size: 0.8rem;
+        }
       }
     }
   }
@@ -254,6 +270,10 @@ query {
   @media (max-width: $largeViewports) {
     transform: translateX(-240px);
   }
+
+  @media (max-width: $smallViewports) {
+    transform: translateX(-200px);
+  }
 }
 
 .close {
@@ -262,6 +282,10 @@ query {
 
   @media (max-width: $largeViewports) {
     transform: translateX(-240px);
+  }
+
+  @media (max-width: $smallViewports) {
+    transform: translateX(-200px);
   }
 }
 
