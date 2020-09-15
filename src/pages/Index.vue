@@ -6,13 +6,9 @@
         <p class="Content-text">
           {{ $t("age") }}
           <br />
-          {{ $t("phone") }}: (51) 99602-2370
+          {{ $t("contact") }}: fernando.rogelin@hotmail.com
           <br />
-          {{ $t("contact") }}:
-          fernando.rogelin@hotmail.com
-          <br />
-          {{ $t("location") }}: Guaíba - Rio
-          Grande do Sul
+          {{ $t("location") }}: Guaíba - Rio Grande do Sul
           <br />
           {{ $t("myself") }}
           <br />
@@ -20,11 +16,26 @@
         </p>
       </Card>
       <div class="Content-footer">
-        <SocialNetwork icon="linkedin" link="https://www.linkedin.com/in/fernando-rogelin/" />
-        <SocialNetwork icon="github" link="https://github.com/FernandoRogelin" />
-        <SocialNetwork icon="twitter" link="https://twitter.com/Nando_Rogelin" />
-        <SocialNetwork icon="facebook" link="https://www.facebook.com/fernando.rogelin/" />
-        <SocialNetwork icon="steam" link="https://steamcommunity.com/profiles/76561198011701372/" />
+        <SocialNetwork
+          icon="linkedin"
+          link="https://www.linkedin.com/in/fernando-rogelin/"
+        />
+        <SocialNetwork
+          icon="github"
+          link="https://github.com/FernandoRogelin"
+        />
+        <SocialNetwork
+          icon="twitter"
+          link="https://twitter.com/Nando_Rogelin"
+        />
+        <SocialNetwork
+          icon="facebook"
+          link="https://www.facebook.com/fernando.rogelin/"
+        />
+        <SocialNetwork
+          icon="steam"
+          link="https://steamcommunity.com/profiles/76561198011701372/"
+        />
       </div>
     </div>
   </Menu>
