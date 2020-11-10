@@ -16,4 +16,12 @@ export default [
     link: "https://www.alura.com.br/",
     name: "Curso Vue.js parte 1: construindo Single Page Applications - Alura",
   },
+  {
+    link: "https://www.alura.com.br/",
+    name: "Performance Web I: otimizando o front-end",
+  },
+  {
+    link: "https://www.alura.com.br/",
+    name: "Performance Web II: Critical Path, HTTP/2 e Resource Hints",
+  },
 ];

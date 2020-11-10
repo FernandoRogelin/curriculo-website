@@ -25,7 +25,7 @@
   ],
   "skill": "Skills",
   "course": "Courses",
-  "college": "formation",
+  "college": "Formation",
   "skills": [
     {
       "technologie": "Front-end",
@@ -40,15 +40,25 @@
     },
     {
       "technologie": "Back-end",
-      "skills": ["C#", "NodeJS"]
+      "skills": [
+        "C#",
+        "NodeJS"
+      ]
     },
     {
       "technologie": "Tests",
-      "skills": ["Jest", "Cypress"]
+      "skills": [
+        "Jest",
+        "Cypress"
+      ]
     },
     {
       "technologie": "Tools",
-      "skills": ["Jenkins", "Webpcack", "Git"]
+      "skills": [
+        "Jenkins",
+        "Webpcack",
+        "Git"
+      ]
     }
   ],
   "system": "Systems Analysis and Development -",
