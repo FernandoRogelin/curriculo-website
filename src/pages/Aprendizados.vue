@@ -33,7 +33,6 @@
 </template>
 
 <script>
-import Skill from "~/utils/skills";
 import Course from "~/utils/courses";
 import Title from "~/components/Title";
 import Content from "~/components/Content";
@@ -47,7 +46,6 @@ export default {
     Content,
   },
   data: () => ({
-    skills: Skill,
     courses: Course,
   }),
 };

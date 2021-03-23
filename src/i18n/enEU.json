@@ -30,11 +30,10 @@
     {
       "technologie": "Front-end",
       "skills": [
-        "React",
+        "ReactJS",
         "VueJS",
         "AngularJS",
         "Angular 5",
-        "JavaScript",
         "ASP.NET"
       ]
     },
@@ -57,7 +56,9 @@
       "skills": [
         "Jenkins",
         "Webpcack",
-        "Git"
+        "Git",
+        "StoryBook",
+        "TypeScript"
       ]
     }
   ],
