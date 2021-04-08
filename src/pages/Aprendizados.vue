@@ -16,13 +16,11 @@
       </div>
       <Title title="course" />
       <div class="Content-body">
-        <a
-          target="_blank"
-          :key="course.id"
-          :href="course.link"
-          v-for="course in courses"
-          class="Content-body-link"
-        >{{ course.name }}</a>
+        <div v-for="course in courses" :key="course.id" class="Content-body-coursesLink">
+          <a target="_blank" :href="course.link" class="Content-body-coursesLink-link">
+            {{ course.name }}
+          </a>
+        </div>
       </div>
       <Title title="college" />
       <div class="Content-body">
@@ -57,7 +55,7 @@ export default {
   align-items: center;
   margin-bottom: 30px;
   flex-direction: column;
-  padding: 0 $paddingScreen;
+  padding: 0 $paddingLeftRightScreen $paddingLarge;
 
   @media (max-width: $smallViewports) {
     padding: 0 40px;
@@ -133,27 +131,30 @@ export default {
     margin-top: 40px;
     flex-direction: column;
 
-    &-link {
-      color: $calypso;
-      width: fit-content;
-      text-decoration: none;
-
-      @media (max-width: $largeViewports) {
-        font-size: 0.9rem;
-      }
-
-      @media (max-width: $smallViewports) {
-        font-size: 0.7rem;
-      }
-
-      &:hover {
-        border-bottom: 1px solid $calypso;
-      }
-
+    &-coursesLink {
       &:not(:last-child) {
         margin-bottom: 10px;
       }
+      
+      &-link {
+        color: $calypso;
+        width: fit-content;
+        text-decoration: none;
+  
+        @media (max-width: $largeViewports) {
+          font-size: 0.9rem;
+        }
+  
+        @media (max-width: $smallViewports) {
+          font-size: 0.7rem;
+        }
+  
+        &:hover {
+          border-bottom: 1px solid $calypso;
+        }
+      }
     }
+
   }
 }
 </style>

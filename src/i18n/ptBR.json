@@ -57,23 +57,30 @@
   "project": "Projetos",
   "experiences": [
     {
+      "company": "Usabit Produtos Digitais",
+      "time": "Março 2021 - Atualmente",
+      "title": "Desenvolvedor de Software",
+      "technologies": "ReactJS (NextJS), Storybook, Testes unitários",
+      "text": "Responsável pelo desenvolvimento de sites responsivos com uso de Frameworks/bibliotecas Front-ends, adequadas para cada projeto feito."
+    },
+    {
       "company": "Compuletra",
-      "time": "Março 2020 - Atual",
-      "title": "Desenvolvedor de Software -",
+      "time": "Março 2020 - Março 2021",
+      "title": "Desenvolvedor de Software",
       "technologies": "ReactJS, NodeJS, ASP.NET, C#, Jenkins",
       "text": "Responsável por refazer o software de vistorias de automóveis utilizando uma tecnologia mais atual, com React e NodeJS. Painéis administrativos para uso interno da empresa."
     },
     {
       "company": "Younner",
       "time": "Maio 2019 - Março 2020",
-      "title": "Desenvolvedor de Software -",
+      "title": "Desenvolvedor de Software",
       "technologies": "ReactJS, VueJS, Nodejs, Netlify, Heroku",
       "text": "Uma Startup em que trabalhei em painéis administrativos e em diversos projetos diferentes, com diversas tecnologias."
     },
     {
       "company": "ilegra",
       "time": "Março 2017 - Março 2019",
-      "title": "Desenvolvedor Front-end -",
+      "title": "Desenvolvedor Front-end",
       "technologies": "AngularJS, ReactJS, NodeJS, Jest, Cypress",
       "text": "Começo da carreira como desenvolvedor, comecei como estagiário, jovem talento como chamam na empresa, logo após 6 mêses de estágio fui efetivado e fui para o projeto do banco Agibank, onde trabalhei no projeto do Internet Banking, que é responsável por pagamento de boletos online, ver a fatura do cartão, entre outros."
     }

@@ -1,7 +1,7 @@
 <template>
   <div class="Body">
     <p v-if="company" class="Body-title">
-      {{ title }}
+      {{ title }} - 
       <span class="Body-title-company">{{ company }}</span>
     </p>
     <p v-if="time" class="Body-time">{{ time }}</p>

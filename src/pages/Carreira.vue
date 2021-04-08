@@ -43,7 +43,7 @@ export default {
   align-items: center;
   margin-bottom: 30px;
   flex-direction: column;
-  padding: 0 $paddingScreen;
+  padding: 0 $paddingLeftRightScreen $paddingLarge;
 
   @media (max-width: $largeViewports) {
     padding: 0 100px;

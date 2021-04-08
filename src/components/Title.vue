@@ -25,7 +25,7 @@ export default {
 
 <style lang="scss" scoped>
 .Title {
-  margin-top: 60px;
+  margin-top: $paddingLarge;
 
   &-header {
     font-size: 2.6rem;

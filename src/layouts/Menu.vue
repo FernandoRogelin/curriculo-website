@@ -182,6 +182,7 @@ query {
 
       &-click {
         display: flex;
+        width: fit-content;
         align-items: center;
 
         &-icon {
