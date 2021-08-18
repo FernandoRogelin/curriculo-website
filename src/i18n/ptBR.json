@@ -47,10 +47,10 @@
     },
     {
       "technologie": "Ferramentas",
-      "skills": ["Jenkins", "Webpcack", "Git", "StoryBook", "TypeScript"]
+      "skills": ["Jenkins", "Webpack", "Git", "StoryBook", "TypeScript"]
     }
   ],
-  "system": "Análise e Desenvolvimento de Sistemas -",
+  "system": "Análise e Desenvolvimento de Sistemas",
   "trained": "Formado em Análise e Desenvolvimento de Sistemas",
   "experience": "Experiências",
   "tech": "Tecnologias",
