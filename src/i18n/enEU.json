@@ -29,13 +29,7 @@
   "skills": [
     {
       "technologie": "Front-end",
-      "skills": [
-        "ReactJS",
-        "VueJS",
-        "AngularJS",
-        "Angular 5",
-        "ASP.NET"
-      ]
+      "skills": ["ReactJS", "VueJS", "AngularJS", "Angular 5", "ASP.NET"]
     },
     {
       "technologie": "Back-end",
@@ -54,12 +48,12 @@
     {
       "technologie": "Tools",
       "skills": [
-        "Jenkins",
-        "Webpack",
-        "Git",
-        "StoryBook",
-        "TypeScript"
+        "Webpack", "Vite", "Babel", "ESLint", "Prettier", "Husky", "Git", "StoryBook", "TypeScript"
       ]
+    },
+    {
+      "technologie": "CI/CD",
+      "skills": ["Jenkins", "GitHub Actions", "AWS (Pipeline)"]
     }
   ],
   "system": "Systems Analysis and Development",
@@ -72,7 +66,7 @@
       "company": "Usabit Produtos Digitais",
       "time": "March 2021 - Currently",
       "title": "Software Developer",
-      "technologies": "ReactJS (NextJS), Storybook, Testes unitários",
+      "technologies": "ReactJS, Storybook, Testes unitários, AWS, GitHub Actions",
       "text": "Responsible for the development of responsible websites with Frameworks/Librarys Front-ends, each project with your appropriate framework/library."
     },
     {
