@@ -14,4 +14,5 @@ Este projeto tem como principal função, apresentar o código que foi usado na 
 
 1. `yarn develop | npm run develop`
 2. Abra ele em `localhost:8080`
-3. Seja feliz codando 🎉🙌
+3. Altere algo e será atualizado automaticamente em tela
+4. Seja feliz codando 🎉🙌

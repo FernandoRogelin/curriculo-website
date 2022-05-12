@@ -5,6 +5,11 @@ export default [
       "React Avançado: Crie aplicações com NextJS, GraphQL e mais - William Justen",
   },
   {
+    link: "https://www.youtube.com/watch?v=mRixno_uE2o&list=PLlAbYrWSYTiPanrzauGa7vMuve7_vnXG_",
+    name:
+      "Mini-curso de TypeScript - William Justen",
+  },
+  {
     link: "https://www.alura.com.br/",
     name: "Flexbox: Posicione elementos na tela - Alura",
   },
@@ -18,10 +23,10 @@ export default [
   },
   {
     link: "https://www.alura.com.br/",
-    name: "Performance Web I: otimizando o front-end",
+    name: "Performance Web I: Otimizando o front-end - Alura",
   },
   {
     link: "https://www.alura.com.br/",
-    name: "Performance Web II: Critical Path, HTTP/2 e Resource Hints",
+    name: "Performance Web II: Critical Path, HTTP/2 e Resource Hints - Alura",
   },
 ];
