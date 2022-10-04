@@ -8,6 +8,7 @@ module.exports = {
     },
   },
   siteName: "Fernando Rogelin",
+  siteDescription: "Site com o objetivo principal de mostrar a minha trajetório percorrida no desenvolvimento de software, servindo como um portfolio online para se ter noção do que eu já fiz e o que já utilizei na área de desenvolvimento",
   plugins: [
     {
       use: "gridsome-plugin-i18n",
