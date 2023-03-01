@@ -4,6 +4,10 @@ Este projeto tem como principal motivo, mostrar o código que foi utilizado na c
 
 O projeto também serve como exemplo para caso outra pessoa queira se inspirar para a criação do seu próprio currículo, podendo assim dar uma olhada em como eu fiz.
 
+## Node
+
+O gridsome ele não roda com versões do node acima da 16.x
+
 ## Tecnologias utilizadas:
 
 - [VueJS](https://vuejs.org/)
@@ -33,6 +37,8 @@ npm run dev
 # or
 yarn dev
 ```
+
+Abra [http://localhost:8080](http://localhost:8080) no seu browser.
 
 ### Comandos
 
