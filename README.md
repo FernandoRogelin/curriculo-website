@@ -1,18 +1,41 @@
 # Curriculo Web
 
-Este projeto tem como principal função, apresentar o código que foi usado na criação do meu Curriculo-web e foi criado com o boilerplate do gridsome `gridsome create new-project`.
+Este projeto tem como principal motivo, mostrar o código que foi utilizado na criação do meu Curriculo-web, todas as informções sobre o projeto estarão aqui no Readme.
 
-### 1. Primeiramente clone o repositório
+O projeto também serve como exemplo para caso outra pessoa queira se inspirar para a criação do seu próprio currículo, podendo assim dar uma olhada em como eu fiz.
+
+## Tecnologias utilizadas:
+
+- [VueJS](https://vuejs.org/)
+- [Gridsome](https://gridsome.org/)
+- [Saas](https://sass-lang.com/)
+- [I18N Plugin](https://gridsome.org/plugins/gridsome-plugin-i18n)
+- [Netlify](https://www.netlify.com/)
+
+# Iniciando o projeto
+
+### 1. Clone o repositório
 
 `git clone https://github.com/FernandoRogelin/curriculo-website.git`
 
 ### 2. Instale as dependências
 
-`yarn install | npm install`
+```bash
+npm install
+# or
+yarn install
+```
 
-### 3. Rode o projeto e acesse ele web
+### 3. Rode em modo desenvolvimento
 
-1. `yarn develop | npm run develop`
-2. Abra ele em `localhost:8080`
-3. Altere algo e será atualizado automaticamente em tela
-4. Seja feliz codando 🎉🙌
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+### Comandos
+
+- `dev`: Roda o sistema em modo desenvolvimento
+- `build`: Gera o modo de produção do sistema
+- `explore`: Roda o sistema em modo de produção
