@@ -26,7 +26,7 @@
         />
         <SocialNetwork
           icon="twitter"
-          link="https://twitter.com/Nando_Rogelin"
+          link="https://twitter.com/RogelinFernando"
         />
         <SocialNetwork
           icon="facebook"
@@ -49,7 +49,7 @@ import SocialNetwork from "~/components/SocialNetwork";
 export default {
   name: "Home",
   metaInfo: {
-    title: "Sobre",
+    title: "Home",
   },
   components: {
     Card,

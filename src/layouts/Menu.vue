@@ -21,7 +21,6 @@
           class="Wrapper-menu-languages-link"
           :class="{ language: this.$i18n.locale.toString() === 'pt-br' }"
         >Português</button>
-        |
         <button
           @click="changeLocale('en')"
           class="Wrapper-menu-languages-link"
@@ -80,8 +79,9 @@ query {
   }
 
   &-close {
-    top: 40px;
-    left: 260px;
+    top: 0;
+    z-index: 1;
+    left: 224px;
     width: 36px;
     height: 36px;
     display: flex;
@@ -104,7 +104,6 @@ query {
       width: 25px;
       height: 3px;
       position: relative;
-      border-radius: 25%;
       transition: $transitionMenu;
       background-color: $ebonyClay;
 
@@ -114,7 +113,6 @@ query {
         width: 25px;
         height: 3px;
         position: absolute;
-        border-radius: 25%;
         transform: rotate(42deg);
         background-color: $white;
         transition: $transitionMenu;
@@ -126,7 +124,6 @@ query {
         width: 25px;
         height: 3px;
         position: absolute;
-        border-radius: 25%;
         background-color: $white;
         transform: rotate(-42deg);
         transition: $transitionMenu;
@@ -244,8 +241,23 @@ query {
         outline: none;
         font-size: 1rem;
         cursor: pointer;
+        position: relative;
         background-color: transparent;
         color: rgba(255, 255, 255, 0.5);
+
+        &:first-child {
+          margin-right: 2rem;
+
+          &::after {
+            top: -3px;
+            width: 1px;
+            content: "";
+            height: 24px;
+            right: -17px;
+            position: absolute;
+            background-color:$white;
+          }
+        }
 
         @media (max-width: $smallViewports) {
           font-size: 0.8rem;
@@ -279,7 +291,7 @@ query {
 
 .close {
   transition: $transitionMenu;
-  transform: translateX($translateMenu);
+  transform: translateX($translateBurguerMenu);
 
   @media (max-width: $largeViewports) {
     transform: translateX(-240px);

@@ -1,7 +1,7 @@
 {
-  "name": "FERNANDO HENRIQUE ROGELIN FILHO",
-  "profession": "Front-End Developer",
-  "age": "Age: 24 Years",
+  "name": "fernando henrique rogelin filho",
+  "profession": "Senior Front-end Engineer",
+  "age": "Age: 25 Years",
   "contact": "Contact",
   "location": "Location",
   "myself": "I am a programmer dedicated to learning new things, new knowledge inspire me to grow every day.",
@@ -10,7 +10,7 @@
     {
       "id": 1,
       "path": "/",
-      "name": "About"
+      "name": "Home"
     },
     {
       "id": 2,

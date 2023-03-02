@@ -31,6 +31,7 @@ export default {
     font-size: 2.6rem;
     color: $pigeonPost;
     border-bottom: 1px solid;
+    text-transform: uppercase;
 
     @media (max-width: $largeViewports) {
       font-size: 2rem;
