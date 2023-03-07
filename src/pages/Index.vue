@@ -1,19 +1,22 @@
 <template>
   <Menu>
     <div class="Content">
-      <Title title="name" subTitle="profession" />
+      <Title title="name" subTitle="Senior Front-end Engineer" />
       <Card>
         <p class="Content-text">
-          {{ $t("age") }}
-          <br />
-          {{ $t("contact") }}: fernando.rogelin@hotmail.com
-          <br />
-          {{ $t("location") }}: Guaíba - Rio Grande do Sul
-          <br />
-          {{ $t("myself") }}
-          <br />
-          {{ $t("goOut") }}
+          {{ $t("welcome") }}
         </p>
+        <p class="Content-text">
+          {{ $t("area") }}
+        </p>
+        <p class="Content-information">
+          {{ $t("information") }}
+        </p>
+        <ul class="Content-list">
+          <li class="Content-list-item">{{ $t("age") }}: <span>25</span></li>
+          <li class="Content-list-item">{{ $t("contact") }}: <span>fernando.rogelin@hotmail.com</span></li>
+          <li class="Content-list-item">{{ $t("location") }}: <span>Guaíba - Rio Grande do Sul</span></li>
+        </ul>
       </Card>
       <div class="Content-footer">
         <SocialNetwork
@@ -75,9 +78,28 @@ export default {
     padding: 0 40px;
   }
 
-  &-text {
+  &-information {
     color: $lynch;
-    line-height: 2.4;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+
+  &-list {
+    margin-top: 0.5rem;
+    padding-left: 2rem;
+
+    &-item {
+      color: $lynch;
+
+      & > span {
+        color: $mineShaft;
+      }
+    }
+  }
+
+  &-text {
+    color: $mineShaft;
+    margin-bottom: 0.7rem;
 
     @media (max-width: $largeViewports) {
       font-size: 0.9rem;
@@ -87,13 +109,8 @@ export default {
   &-footer {
     width: 100%;
     display: flex;
+    column-gap: 5px;
     margin-top: 30px;
-
-    > div {
-      &:not(:last-child) {
-        margin-right: 5px;
-      }
-    }
   }
 }
 </style>

@@ -42,7 +42,8 @@ export default {
     }
 
     &-subTitle {
-      color: $pigeonPost;
+      font-size: 1.1rem;
+      color: $steelBlue;
 
       @media (max-width: $largeViewports) {
         font-size: 0.9rem;

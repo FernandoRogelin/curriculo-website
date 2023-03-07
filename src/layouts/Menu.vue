@@ -235,28 +235,28 @@ query {
     &-languages {
       margin-top: 40px;
       color: $pigeonPost;
+      position: relative;
+
+      &::after {
+        top: -3px;
+        width: 1px;
+        left: 90px;
+        content: "";
+        height: 24px;
+        position: absolute;
+        background-color:$white;
+      }
 
       &-link {
         border: none;
         outline: none;
         font-size: 1rem;
         cursor: pointer;
-        position: relative;
         background-color: transparent;
         color: rgba(255, 255, 255, 0.5);
 
         &:first-child {
           margin-right: 2rem;
-
-          &::after {
-            top: -3px;
-            width: 1px;
-            content: "";
-            height: 24px;
-            right: -17px;
-            position: absolute;
-            background-color:$white;
-          }
         }
 
         @media (max-width: $smallViewports) {

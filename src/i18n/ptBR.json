@@ -1,11 +1,13 @@
 {
   "name": "fernando henrique rogelin filho",
   "profession": "Senior Front-end Engineer",
-  "age": "Idade: 25 Anos",
+  "age": "Idade",
   "contact": "Contato",
   "location": "Localização",
-  "myself": "Eu sou um programador dedicado a aprender novas tecnologias, novos conhecimentos me inspiram a crescer todos os dias.",
-  "goOut": "Amo sair com meus amigos e minha família para bater um bom papo e tomar uma cerveja das boas.",
+  "information": "Informações:",
+  "office": "Cargo",
+  "welcome": "Sejam bem-vindos ao meu currículo website, atualmente estou trabalhando como Senior Front-end Engineer e tenho 6+ anos de experiência na área.",
+  "area": "Sou apaixonado pela área de Front-end (as vezes estudo um pouco Back-end também) então costumo estudar bastante sobre e ficar sempre se atualizando sobre as novidades que estão surgindo, até por que na área de desenvolvimento, sempre tem algo novo para estudar.",
   "menu": [
     {
       "id": 1,

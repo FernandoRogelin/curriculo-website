@@ -18,8 +18,8 @@ export default {
 
 <style lang="scss" scoped>
 .Wrapper {
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
   background-color: $ebonyClay;
 
@@ -43,7 +43,7 @@ export default {
 
     &-icon {
       color: $white;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
 
       @media (max-width: $largeViewports) {
         font-size: 1.5rem;

@@ -1,11 +1,13 @@
 {
   "name": "fernando henrique rogelin filho",
   "profession": "Senior Front-end Engineer",
-  "age": "Age: 25 Years",
+  "age": "Age",
   "contact": "Contact",
   "location": "Location",
-  "myself": "I am a programmer dedicated to learning new things, new knowledge inspire me to grow every day.",
-  "goOut": "Love to go out with my friends and my family to drink a beer and talk about many things.",
+  "information": "Informations:",
+  "office": "Office",
+  "welcome": "Welcome to my resume website, I'm currently working as Senior Front-end Engineer with 6+ years of experience in the area ",
+  "area": "I'm in love with the Front-end area (sometimes I study back-end too) so I usually study a lot and keep up to date with news, because in the development area, there's always something new to study.",
   "menu": [
     {
       "id": 1,
