@@ -11,17 +11,14 @@
   "menu": [
     {
       "id": 1,
-      "path": "/",
       "name": "Home"
     },
     {
       "id": 2,
-      "path": "/carreira",
       "name": "Carreira"
     },
     {
       "id": 3,
-      "path": "/aprendizados",
       "name": "Aprendizados"
     }
   ],

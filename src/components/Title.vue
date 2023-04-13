@@ -1,8 +1,10 @@
 <template>
   <transition name="slide-fade">
     <div class="Title" v-if="showTitle">
-      <h1 class="Title-header">{{ $t(title) }}</h1>
-      <p v-if="subTitle" class="Title-header-subTitle">{{ $t(subTitle) }}</p>
+      <div>
+        <h1 class="Title-header">{{ $t(title) }}</h1>
+        <p v-if="subTitle" class="Title-header-subTitle">{{ $t(subTitle) }}</p>
+      </div>
     </div>
   </transition>
 </template>
@@ -25,7 +27,9 @@ export default {
 
 <style lang="scss" scoped>
 .Title {
-  margin-top: $paddingLarge;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
   &-header {
     font-size: 2.6rem;
@@ -44,6 +48,7 @@ export default {
     &-subTitle {
       font-size: 1.1rem;
       color: $steelBlue;
+      text-transform: capitalize;
 
       @media (max-width: $largeViewports) {
         font-size: 0.9rem;

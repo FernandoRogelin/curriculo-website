@@ -1,7 +1,9 @@
 <template>
-  <Menu>
+  <div>
+    <div class="Photo" />
+    <Menu />
     <div class="Content">
-      <Title title="name" subTitle="Senior Front-end Engineer" />
+      <Title title="name" subTitle="senior front-end engineer" />
       <Card>
         <p class="Content-text">
           {{ $t("welcome") }}
@@ -40,11 +42,14 @@
           link="https://steamcommunity.com/profiles/76561198011701372/"
         />
       </div>
+      <Learnings />
+      <Career />
     </div>
-  </Menu>
+  </div>
 </template>
 
 <script>
+import Menu from "~/layouts/Menu.vue";
 import Card from "~/components/Card";
 import Title from "~/components/Title";
 import SocialNetwork from "~/components/SocialNetwork";
@@ -56,6 +61,7 @@ export default {
   },
   components: {
     Card,
+    Menu,
     Title,
     SocialNetwork,
   },
@@ -63,12 +69,33 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.Photo {
+    top: 4rem;
+    left: 4rem;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 100%;
+    background-size: cover;
+    border: 4px solid $tundora;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/Photo.jpg");
+
+    @media (max-width: $largeViewports) {
+      width: 140px;
+      height: 140px;
+    }
+
+    @media (max-width: $smallViewports) {
+      width: 120px;
+      height: 120px;
+    }
+  }
 .Content {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-  flex-direction: column;
-  padding: 0 $paddingLeftRightScreen $paddingLarge;
+  margin: 0 auto;
+  max-width: 80rem;
+  padding: 0 4rem 2rem;
 
   @media (max-width: $largeViewports) {
     padding: 0 100px;
