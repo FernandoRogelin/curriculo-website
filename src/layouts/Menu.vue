@@ -1,23 +1,25 @@
 <template>
-  <div class="Wrapper">
-    <ul class="Wrapper-list">
-      <li :key="menu.id" v-for="menu in $t('menu')" class="Wrapper-list-link">
-        {{ menu.name }}
-      </li>
-    </ul>
-    <div class="Wrapper-languages">
-      <button
-        @click="changeLocale('pt')"
-        class="Wrapper-languages-link"
-        :class="{ language: this.$i18n.locale.toString() === 'pt-br' }"
-      >Português</button>
-      <button
-        @click="changeLocale('en')"
-        class="Wrapper-languages-link"
-        :class="{ language: this.$i18n.locale.toString() === 'en-eu' }"
-      >English</button>
+  <header class="Wrapper">
+    <div class="Wrapper-content">
+      <ul class="Wrapper-list">
+        <li :key="menu.id" v-for="menu in $t('menu')" class="Wrapper-list-link">
+          {{ menu.name }}
+        </li>
+      </ul>
+      <div class="Wrapper-languages">
+        <button
+          @click="changeLocale('pt')"
+          class="Wrapper-languages-link"
+          :class="{ language: this.$i18n.locale.toString() === 'pt-br' }"
+        >Português</button>
+        <button
+          @click="changeLocale('en')"
+          class="Wrapper-languages-link"
+          :class="{ language: this.$i18n.locale.toString() === 'en-eu' }"
+        >English</button>
+      </div>
     </div>
-  </div>
+  </header>
 </template>
 
 <script>
@@ -44,11 +46,12 @@ query {
 <style lang="scss" scoped>
 .Wrapper {
   top: 0;
+  z-index: 1;
   width: 100%;
   display: flex;
-  padding: 16px;
   position: sticky;
   column-gap: 30px;
+  padding: 16px 4rem;
   align-items: center;
   justify-content: center;
   transition: $transitionMenu;
@@ -60,6 +63,13 @@ query {
 
   @media (max-width: $smallViewports) {
     width: 200px;
+  }
+
+  &-content {
+    width: 80rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   &-list {

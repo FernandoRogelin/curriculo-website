@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="Photo" />
     <Menu />
     <div class="Content">
+      <div class="Photo" />
       <Title title="name" subTitle="senior front-end engineer" />
       <Card>
         <p class="Content-text">
@@ -11,36 +11,43 @@
         <p class="Content-text">
           {{ $t("area") }}
         </p>
-        <p class="Content-information">
-          {{ $t("information") }}
-        </p>
-        <ul class="Content-list">
-          <li class="Content-list-item">{{ $t("age") }}: <span>25</span></li>
-          <li class="Content-list-item">{{ $t("contact") }}: <span>fernando.rogelin@hotmail.com</span></li>
-          <li class="Content-list-item">{{ $t("location") }}: <span>Guaíba - Rio Grande do Sul</span></li>
-        </ul>
       </Card>
-      <div class="Content-footer">
-        <SocialNetwork
-          icon="linkedin"
-          link="https://www.linkedin.com/in/fernando-rogelin/"
-        />
-        <SocialNetwork
-          icon="github"
-          link="https://github.com/FernandoRogelin"
-        />
-        <SocialNetwork
-          icon="twitter"
-          link="https://twitter.com/RogelinFernando"
-        />
-        <SocialNetwork
-          icon="facebook"
-          link="https://www.facebook.com/fernando.rogelin/"
-        />
-        <SocialNetwork
-          icon="steam"
-          link="https://steamcommunity.com/profiles/76561198011701372/"
-        />
+      <div class="Content-informations">
+        <div>
+          <p class="Content-informations-information">
+            {{ $t("information") }}
+          </p>
+          <ul class="Content-informations-list">
+            <li class="Content-informations-list-item">{{ $t("age") }}: <span>25</span></li>
+            <li class="Content-informations-list-item">{{ $t("contact") }}: <span>fernando.rogelin@hotmail.com</span></li>
+            <li class="Content-informations-list-item">{{ $t("location") }}: <span>Guaíba - Rio Grande do Sul</span></li>
+          </ul>
+        </div>
+        <div class="Content-informations-footer">
+          <p class="Content-informations-information">{{ $t("network") }}</p>
+          <div>
+            <SocialNetwork
+              icon="linkedin"
+              link="https://www.linkedin.com/in/fernando-rogelin/"
+            />
+            <SocialNetwork
+              icon="github"
+              link="https://github.com/FernandoRogelin"
+            />
+            <SocialNetwork
+              icon="twitter"
+              link="https://twitter.com/RogelinFernando"
+            />
+            <SocialNetwork
+              icon="facebook"
+              link="https://www.facebook.com/fernando.rogelin/"
+            />
+            <SocialNetwork
+              icon="steam"
+              link="https://steamcommunity.com/profiles/76561198011701372/"
+            />
+          </div>
+        </div>
       </div>
       <Learnings />
       <Career />
@@ -70,8 +77,8 @@ export default {
 
 <style lang="scss" scoped>
 .Photo {
-    top: 4rem;
-    left: 4rem;
+    top: -3rem;
+    left: 3rem;
     width: 150px;
     height: 150px;
     position: absolute;
@@ -93,8 +100,9 @@ export default {
     }
   }
 .Content {
-  margin: 0 auto;
   max-width: 80rem;
+  position: relative;
+  margin: 4rem auto 0;
   padding: 0 4rem 2rem;
 
   @media (max-width: $largeViewports) {
@@ -105,21 +113,38 @@ export default {
     padding: 0 40px;
   }
 
-  &-information {
-    color: $lynch;
+  &-informations {
+    display: flex;
     margin-top: 2rem;
-    font-size: 1.2rem;
-  }
+    align-items: flex-end;
+    justify-content: space-between;
 
-  &-list {
-    margin-top: 0.5rem;
-    padding-left: 2rem;
-
-    &-item {
+    &-information {
       color: $lynch;
+      font-size: 1.2rem;
+    }
 
-      & > span {
-        color: $mineShaft;
+    &-list {
+      margin-top: 0.5rem;
+      padding-left: 2rem;
+
+      &-item {
+        color: $lynch;
+
+        & > span {
+          color: $mineShaft;
+        }
+      }
+    }
+
+    &-footer {
+      display: flex;
+      flex-direction: column;
+
+      & > div {
+        display: flex;
+        column-gap: 5px;
+        margin-top: 0.5rem;
       }
     }
   }
@@ -131,13 +156,6 @@ export default {
     @media (max-width: $largeViewports) {
       font-size: 0.9rem;
     }
-  }
-
-  &-footer {
-    width: 100%;
-    display: flex;
-    column-gap: 5px;
-    margin-top: 30px;
   }
 }
 </style>

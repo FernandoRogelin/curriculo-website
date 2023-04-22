@@ -8,18 +8,27 @@
   "office": "Office",
   "welcome": "Welcome to my resume website, I'm currently working as Senior Front-end Engineer with 6+ years of experience in the area ",
   "area": "I'm in love with the Front-end area (sometimes I study back-end too) so I usually study a lot and keep up to date with news, because in the development area, there's always something new to study.",
+  "network": "Social Network:",
   "menu": [
     {
       "id": 1,
-      "name": "Home"
+      "name": "Skills"
     },
     {
       "id": 2,
-      "name": "Career"
+      "name": "Courses"
     },
     {
       "id": 3,
-      "name": "Learnings"
+      "name": "Formation"
+    },
+    {
+      "id": 4,
+      "name": "Experiences"
+    },
+    {
+      "id": 5,
+      "name": "Projects"
     }
   ],
   "skill": "Skills",
