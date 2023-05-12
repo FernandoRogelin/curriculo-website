@@ -2,7 +2,12 @@
   <header class="Wrapper">
     <div class="Wrapper-content">
       <ul class="Wrapper-list">
-        <li :key="menu.id" v-for="menu in $t('menu')" class="Wrapper-list-link">
+        <li
+          :key="menu.id"
+          v-for="menu in $t('menu')"
+          class="Wrapper-list-link"
+          @click="scrollToElement(menu.scroll)"
+        >
           {{ menu.name }}
         </li>
       </ul>
@@ -31,6 +36,11 @@ export default {
         path: this.$tp(this.$route.path, locale, true),
       });
     },
+    scrollToElement(id) {
+      const el = document.getElementById(id)
+
+      if (el) el.scrollIntoView({ behavior: 'smooth' })
+    }
   },
 };
 </script>
@@ -66,7 +76,7 @@ query {
   }
 
   &-content {
-    width: 80rem;
+    width: 74rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -76,7 +86,7 @@ query {
     margin: 0;
     display: flex;
     list-style: none;
-    column-gap: 14px;
+    column-gap: 15px;
     font-size: 1.1rem;
 
     @media (max-width: $largeViewports) {
@@ -89,13 +99,25 @@ query {
 
     &-link {
       width: 100%;
+      color: $white;
       display: block;
       cursor: pointer;
+      position: relative;
       text-decoration: none;
-      color: rgba(255, 255, 255, 0.5);
 
       &:hover {
         color: $cornflowerBlue;
+      }
+
+      &:not(:last-child) {
+        &::after {
+          width: 1px;
+          content: "";
+          height: 24px;
+          right: -8px;
+          position: absolute;
+          background-color:$white;
+        }
       }
     }
   }

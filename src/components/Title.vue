@@ -30,6 +30,7 @@ export default {
   display: flex;
   align-items: center;
   flex-direction: column;
+  scroll-margin-top: 60px;
 
   &-header {
     font-size: 2.6rem;

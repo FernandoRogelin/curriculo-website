@@ -12,23 +12,28 @@
   "menu": [
     {
       "id": 1,
-      "name": "Habilidades"
+      "name": "Habilidades",
+      "scroll": "skills"
     },
     {
       "id": 2,
-      "name": "Cursos"
+      "name": "Cursos",
+      "scroll": "courses"
     },
     {
       "id": 3,
-      "name": "Ensino"
+      "name": "Formação",
+      "scroll": "formation"
     },
     {
       "id": 4,
-      "name": "Experiencias"
+      "name": "Experiencias",
+      "scroll": "experiences"
     },
     {
       "id": 5,
-      "name": "Projetos"
+      "name": "Projetos",
+      "scroll": "projects"
     }
   ],
   "skill": "Habilidades",

@@ -1,6 +1,6 @@
 <template>
   <div class="WrapperCareer">
-    <Title title="experience" />
+    <Title title="experience" id="experiences" />
     <div class="WrapperCareer-companys">
       <div v-for="experience in $t('experiences')" :key="experience.id" class="WrapperCareer-body">
         <Content
@@ -11,7 +11,7 @@
         >{{ experience.text }}</Content>
       </div>
     </div>
-    <Title title="project" />
+    <Title title="project" id="projects" />
     <div class="WrapperCareer-body">
       <a
         target="_blank"

@@ -1,6 +1,6 @@
 <template>
   <div class="WrapperLearnings">
-    <Title title="skill" />
+    <Title title="skill" id="skills" />
     <div class="WrapperLearnings-skills">
       <div class="WrapperLearnings-skills-wrapper" v-for="skill in $t('skills')" :key="skill.id">
         <p class="WrapperLearnings-skills-wrapper-technologies">{{ skill.technologie }}</p>
@@ -13,7 +13,7 @@
         </ul>
       </div>
     </div>
-    <Title title="course" />
+    <Title title="course" id="courses" />
     <div class="WrapperLearnings-body">
       <div v-for="course in courses" :key="course.id" class="WrapperLearnings-body-coursesLink">
         <a target="_blank" :href="course.link" class="WrapperLearnings-body-coursesLink-link">
@@ -21,7 +21,7 @@
         </a>
       </div>
     </div>
-    <Title title="college" />
+    <Title title="college" id="formation" />
     <div class="WrapperLearnings-body">
       <Content time="2015 - 2019" :title="$t('system')" company="UniRitter">{{ $t("trained") }}</Content>
     </div>
