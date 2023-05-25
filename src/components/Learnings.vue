@@ -9,17 +9,23 @@
             :key="skill.id"
             v-for="skill in skill.skills"
             class="WrapperLearnings-skills-wrapper-list-item"
-          >{{ skill }}</li>
+          >
+            {{ skill }}
+          </li>
         </ul>
       </div>
     </div>
     <Title title="course" id="courses" />
     <div class="WrapperLearnings-body">
-      <div v-for="course in courses" :key="course.id" class="WrapperLearnings-body-coursesLink">
-        <a target="_blank" :href="course.link" class="WrapperLearnings-body-coursesLink-link">
-          {{ course.name }}
-        </a>
-      </div>
+      <a
+        target="_blank"
+        :key="course.id"
+        :href="course.link"
+        v-for="course in courses"
+        class="WrapperLearnings-body-link"
+        >
+        {{ course.name }}
+      </a>
     </div>
     <Title title="college" id="formation" />
     <div class="WrapperLearnings-body">
@@ -48,10 +54,6 @@ export default {
 .WrapperLearnings {
   margin-top: 60px;
 
-  @media (max-width: $smallViewports) {
-    padding: 0 40px;
-  }
-
   &-header {
     margin-top: 60px;
 
@@ -66,26 +68,35 @@ export default {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    column-gap: 50px;
     margin: 40px 0 60px;
     justify-content: center;
 
+    @media (max-width: $smallViewports) {
+      row-gap: 30px;
+      column-gap: 30px;
+      justify-content: flex-start;
+    }
+
     &-wrapper {
+      position: relative;
+
       &:not(:last-child) {
-        padding-right: 30px;
-        border-right: 1px solid $pigeonPost;
+        &:after {
+          top: 0;
+          width: 1px;
+          content: '';
+          right: -25px;
+          height: 100%;
+          position: absolute;
+          background-color: $pigeonPost;
 
-        @media (max-width: $smallViewports) {
-          border-right: none;
+          @media (max-width: $smallViewports) {
+            display: none;
+          }
         }
       }
 
-      &:not(:first-child) {
-        padding-left: 30px;
-
-        @media (max-width: $smallViewports) {
-          padding-left: 0;
-        }
-      }
 
       &-technologies {
         font-weight: bold;
@@ -120,30 +131,27 @@ export default {
   &-body {
     width: 100%;
     display: flex;
-    margin: 40px 0 40px;
+    row-gap: 10px;
+    margin: 40px 0;
     flex-direction: column;
 
-    &-coursesLink {
-      &:not(:last-child) {
-        margin-bottom: 10px;
+    &-link {
+      height: 22px;
+      color: $calypso;
+      width: fit-content;
+      text-decoration: none;
+
+      @media (max-width: $largeViewports) {
+        font-size: 0.9rem;
       }
 
-      &-link {
-        color: $calypso;
-        width: fit-content;
-        text-decoration: none;
+      @media (max-width: $smallViewports) {
+        height: initial;
+        font-size: 0.7rem;
+      }
 
-        @media (max-width: $largeViewports) {
-          font-size: 0.9rem;
-        }
-
-        @media (max-width: $smallViewports) {
-          font-size: 0.7rem;
-        }
-
-        &:hover {
-          border-bottom: 1px solid $calypso;
-        }
+      &:hover {
+        border-bottom: 1px solid $calypso;
       }
     }
 

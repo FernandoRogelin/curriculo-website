@@ -4,8 +4,8 @@
       <ul class="Wrapper-list">
         <li
           :key="menu.id"
-          v-for="menu in $t('menu')"
           class="Wrapper-list-link"
+          v-for="menu in $t('menu')"
           @click="scrollToElement(menu.scroll)"
         >
           {{ menu.name }}
@@ -68,11 +68,9 @@ query {
   background-color: $blackPearl;
 
   @media (max-width: $largeViewports) {
-    width: 240px;
   }
 
   @media (max-width: $smallViewports) {
-    width: 200px;
   }
 
   &-content {
@@ -94,6 +92,7 @@ query {
     }
 
     @media (max-width: $smallViewports) {
+      display: none;
       font-size: 0.9rem;
     }
 
@@ -111,10 +110,11 @@ query {
 
       &:not(:last-child) {
         &::after {
+          top: 2px;
           width: 1px;
           content: "";
-          height: 24px;
           right: -8px;
+          height: 16px;
           position: absolute;
           background-color:$white;
         }

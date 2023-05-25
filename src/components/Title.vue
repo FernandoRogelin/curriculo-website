@@ -1,6 +1,7 @@
 <template>
   <transition name="slide-fade">
     <div class="Title" v-if="showTitle">
+      <div class="Photo" v-if="showPhoto" />
       <div>
         <h1 class="Title-header">{{ $t(title) }}</h1>
         <p v-if="subTitle" class="Title-header-subTitle">{{ $t(subTitle) }}</p>
@@ -21,16 +22,38 @@ export default {
   props: {
     title: String,
     subTitle: String,
+    showPhoto: Boolean = false
   },
 };
 </script>
 
 <style lang="scss" scoped>
+.Photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-size: cover;
+    border: 4px solid $tundora;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/Photo.jpg");
+
+    @media (max-width: $largeViewports) {
+      width: 140px;
+      height: 140px;
+    }
+}
 .Title {
   display: flex;
+  column-gap: 3rem;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
   scroll-margin-top: 60px;
+
+  @media (max-width: $smallViewports) {
+    row-gap: 1rem;
+    flex-direction: column;
+  }
 
   &-header {
     font-size: 2.6rem;
@@ -43,7 +66,7 @@ export default {
     }
 
     @media (max-width: $smallViewports) {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
 
     &-subTitle {

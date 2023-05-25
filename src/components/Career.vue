@@ -36,14 +36,6 @@ export default {
 
 <style lang="scss" scoped>
 .WrapperCareer {
-  @media (max-width: $largeViewports) {
-    padding: 0 100px;
-  }
-
-  @media (max-width: $smallViewports) {
-    padding: 0 40px;
-  }
-
   &-companys {
     margin-bottom: 40px;
   }

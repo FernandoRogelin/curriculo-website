@@ -53,14 +53,14 @@
       "skills": ["Jest", "Cypress"]
     },
     {
+      "technologie": "CI/CD",
+      "skills": ["Jenkins", "GitHub Actions", "AWS (Pipeline)"]
+    },
+    {
       "technologie": "Ferramentas",
       "skills": [
         "Webpack", "Vite", "Babel", "ESLint", "Prettier", "Husky", "Git", "StoryBook", "TypeScript"
       ]
-    },
-    {
-      "technologie": "CI/CD",
-      "skills": ["Jenkins", "GitHub Actions", "AWS (Pipeline)"]
     }
   ],
   "system": "Análise e Desenvolvimento de Sistemas",
@@ -72,7 +72,7 @@
     {
       "company": "Usabit Produtos Digitais",
       "time": "Março 2021 - Atualmente",
-      "title": "Desenvolvedor de Software",
+      "title": "Senior Front-end Engineer",
       "technologies": "ReactJS, Storybook, Testes unitários, AWS, GitHub Actions",
       "text": "Responsável pelo desenvolvimento de muitos projetos diferentes com várias tecnologias, desenvolvendo desde a parte arquitetural do projeto. Ajudei os estagiários que estão em começo de carreira, dando aulas para ensinar a como desenvolver e como pensar como um desenvolvedor."
     },

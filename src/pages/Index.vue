@@ -2,8 +2,7 @@
   <div>
     <Menu />
     <div class="Content">
-      <div class="Photo" />
-      <Title title="name" subTitle="senior front-end engineer" />
+      <Title showPhoto title="name" subTitle="senior front-end engineer" />
       <Card>
         <p class="Content-text">
           {{ $t("welcome") }}
@@ -18,9 +17,17 @@
             {{ $t("information") }}
           </p>
           <ul class="Content-informations-list">
-            <li class="Content-informations-list-item">{{ $t("age") }}: <span>25</span></li>
-            <li class="Content-informations-list-item">{{ $t("contact") }}: <span>fernando.rogelin@hotmail.com</span></li>
-            <li class="Content-informations-list-item">{{ $t("location") }}: <span>Guaíba - Rio Grande do Sul</span></li>
+            <li class="Content-informations-list-item">{{ $t("age") }}:
+              <span>25</span>
+            </li>
+            <li class="Content-informations-list-item">{{ $t("contact") }}:
+              <a href="mailto:fernando.rogelin@hotmail.com">
+                fernando.rogelin@hotmail.com
+              </a>
+            </li>
+            <li class="Content-informations-list-item">{{ $t("location") }}:
+              <span>Guaíba - Rio Grande do Sul</span>
+            </li>
           </ul>
         </div>
         <div class="Content-informations-footer">
@@ -76,29 +83,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.Photo {
-    top: -3rem;
-    left: 3rem;
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    border-radius: 100%;
-    background-size: cover;
-    border: 4px solid $tundora;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("../images/Photo.jpg");
-
-    @media (max-width: $largeViewports) {
-      width: 140px;
-      height: 140px;
-    }
-
-    @media (max-width: $smallViewports) {
-      width: 120px;
-      height: 120px;
-    }
-  }
 .Content {
   max-width: 80rem;
   position: relative;
@@ -111,13 +95,20 @@ export default {
 
   @media (max-width: $smallViewports) {
     padding: 0 40px;
+    margin: 1rem auto 0;
   }
 
   &-informations {
     display: flex;
+    row-gap: 30px;
+    flex-wrap: wrap;
     margin-top: 2rem;
     align-items: flex-end;
     justify-content: space-between;
+
+    @media (max-width: $smallViewports) {
+      justify-content: center;
+    }
 
     &-information {
       color: $lynch;
@@ -131,7 +122,7 @@ export default {
       &-item {
         color: $lynch;
 
-        & > span {
+        & > span, a {
           color: $mineShaft;
         }
       }
