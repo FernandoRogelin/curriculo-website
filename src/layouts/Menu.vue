@@ -11,17 +11,24 @@
           {{ menu.name }}
         </li>
       </ul>
+      <div class="Wrapper-hamburguer">
+        <p>Menu hamburguer</p>
+      </div>
       <div class="Wrapper-languages">
         <button
           @click="changeLocale('pt')"
           class="Wrapper-languages-link"
           :class="{ language: this.$i18n.locale.toString() === 'pt-br' }"
-        >Português</button>
+        >
+          PT
+        </button>
         <button
           @click="changeLocale('en')"
           class="Wrapper-languages-link"
           :class="{ language: this.$i18n.locale.toString() === 'en-eu' }"
-        >English</button>
+        >
+          EN
+        </button>
       </div>
     </div>
   </header>
@@ -68,9 +75,7 @@ query {
   background-color: $blackPearl;
 
   @media (max-width: $largeViewports) {
-  }
-
-  @media (max-width: $smallViewports) {
+    padding: 16px 1rem;
   }
 
   &-content {
@@ -88,11 +93,11 @@ query {
     font-size: 1.1rem;
 
     @media (max-width: $largeViewports) {
+      display: none;
       font-size: 1rem;
     }
 
     @media (max-width: $smallViewports) {
-      display: none;
       font-size: 0.9rem;
     }
 
@@ -122,14 +127,25 @@ query {
     }
   }
 
+  &-hamburguer {
+    display: none;
+    color: white;
+
+    @media (max-width: $largeViewports) {
+      display: block;
+    }
+  }
+
   &-languages {
+    display: flex;
+    column-gap: 2rem;
     color: $pigeonPost;
     position: relative;
 
     &::after {
-      top: -3px;
+      top: -4px;
+      left: 50%;
       width: 1px;
-      left: 90px;
       content: "";
       height: 24px;
       position: absolute;
@@ -143,10 +159,6 @@ query {
       cursor: pointer;
       background-color: transparent;
       color: rgba(255, 255, 255, 0.5);
-
-      &:first-child {
-        margin-right: 2rem;
-      }
 
       @media (max-width: $smallViewports) {
         font-size: 0.8rem;

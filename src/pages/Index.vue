@@ -13,9 +13,6 @@
       </Card>
       <div class="Content-informations">
         <div>
-          <p class="Content-informations-information">
-            {{ $t("information") }}
-          </p>
           <ul class="Content-informations-list">
             <li class="Content-informations-list-item">{{ $t("age") }}:
               <span>25</span>
@@ -31,7 +28,6 @@
           </ul>
         </div>
         <div class="Content-informations-footer">
-          <p class="Content-informations-information">{{ $t("network") }}</p>
           <div>
             <SocialNetwork
               icon="linkedin"
