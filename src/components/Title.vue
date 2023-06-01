@@ -22,7 +22,7 @@ export default {
   props: {
     title: String,
     subTitle: String,
-    showPhoto: Boolean = false
+    showPhoto: false
   },
 };
 </script>

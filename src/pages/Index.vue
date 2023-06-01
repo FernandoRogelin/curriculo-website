@@ -2,7 +2,7 @@
   <div>
     <Menu />
     <div class="Content">
-      <Title showPhoto title="name" subTitle="senior front-end engineer" />
+      <Title :showPhoto="true" title="name" subTitle="senior front-end engineer" />
       <Card>
         <p class="Content-text">
           {{ $t("welcome") }}
