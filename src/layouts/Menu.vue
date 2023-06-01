@@ -11,9 +11,7 @@
           {{ menu.name }}
         </li>
       </ul>
-      <div class="Wrapper-hamburguer">
-        <p>Menu hamburguer</p>
-      </div>
+      <Hamburguer />
       <div class="Wrapper-languages">
         <button
           @click="changeLocale('pt')"
@@ -35,8 +33,13 @@
 </template>
 
 <script>
+import Hamburguer from '~/components/Hamburguer.vue';
+
 export default {
   name: "Menu",
+  components: {
+    Hamburguer
+  },
   methods: {
     changeLocale(locale) {
       this.$router.push({
@@ -124,15 +127,6 @@ query {
           background-color:$white;
         }
       }
-    }
-  }
-
-  &-hamburguer {
-    display: none;
-    color: white;
-
-    @media (max-width: $largeViewports) {
-      display: block;
     }
   }
 
