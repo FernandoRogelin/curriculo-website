@@ -8,21 +8,32 @@
   "office": "Office",
   "welcome": "Welcome to my resume website, I'm currently working as Senior Front-end Engineer with 6+ years of experience in the area ",
   "area": "I'm in love with the Front-end area (sometimes I study back-end too) so I usually study a lot and keep up to date with news, because in the development area, there's always something new to study.",
+  "network": "Social Network:",
   "menu": [
     {
       "id": 1,
-      "path": "/",
-      "name": "Home"
+      "name": "Skills",
+      "scroll": "skills"
     },
     {
       "id": 2,
-      "path": "/carreira",
-      "name": "Career"
+      "name": "Courses",
+      "scroll": "courses"
     },
     {
       "id": 3,
-      "path": "/aprendizados",
-      "name": "Learnings"
+      "name": "Formation",
+      "scroll": "formation"
+    },
+    {
+      "id": 4,
+      "name": "Experiences",
+      "scroll": "experiences"
+    },
+    {
+      "id": 5,
+      "name": "Projects",
+      "scroll": "projects"
     }
   ],
   "skill": "Skills",
@@ -48,14 +59,14 @@
       ]
     },
     {
+      "technologie": "CI/CD",
+      "skills": ["Jenkins", "GitHub Actions", "AWS (Pipeline)"]
+    },
+    {
       "technologie": "Tools",
       "skills": [
         "Webpack", "Vite", "Babel", "ESLint", "Prettier", "Husky", "Git", "StoryBook", "TypeScript"
       ]
-    },
-    {
-      "technologie": "CI/CD",
-      "skills": ["Jenkins", "GitHub Actions", "AWS (Pipeline)"]
     }
   ],
   "system": "Systems Analysis and Development",
@@ -67,7 +78,7 @@
     {
       "company": "Usabit Produtos Digitais",
       "time": "March 2021 - Currently",
-      "title": "Software Developer",
+      "title": "Senior Front-end Engineer",
       "technologies": "ReactJS, Storybook, Testes unitários, AWS, GitHub Actions",
       "text": "Responsible for the development of different projects with many technologies, development from the architectural part of project. I helped interns who are starting their careers, teaching how development and how to think like a developer"
     },

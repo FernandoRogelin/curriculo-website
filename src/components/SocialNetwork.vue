@@ -28,11 +28,6 @@ export default {
     height: 45px;
   }
 
-  @media (max-width: $smallViewports) {
-    width: 35px;
-    height: 35px;
-  }
-
   &-link {
     width: 100%;
     height: 100%;
