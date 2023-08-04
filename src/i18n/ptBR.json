@@ -42,7 +42,7 @@
   "skills": [
     {
       "technologie": "Front-end",
-      "skills": ["ReactJS", "VueJS", "AngularJS", "Angular 5", "ASP.NET"]
+      "skills": ["React", "Vue (2, 3)", "Next", "AngularJS", "Angular 5", "ASP.NET"]
     },
     {
       "technologie": "Back-end",
@@ -50,7 +50,7 @@
     },
     {
       "technologie": "Testes",
-      "skills": ["Jest", "Cypress"]
+      "skills": ["Jest", "Cypress", "Vitest"]
     },
     {
       "technologie": "CI/CD",

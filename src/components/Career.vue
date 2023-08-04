@@ -1,23 +1,27 @@
 <template>
-  <div class="WrapperCareer">
+  <div>
     <Title title="experience" id="experiences" />
-    <div class="WrapperCareer-companys">
-      <div v-for="experience in $t('experiences')" :key="experience.id" class="WrapperCareer-body">
+    <div class="companys">
+      <div v-for="experience in $t('experiences')" :key="experience.id" class="body">
         <Content
-        :time="experience.time"
-        :title="experience.title"
-        :company="experience.company"
-        :technologies="experience.technologies"
-        >{{ experience.text }}</Content>
+          :time="experience.time"
+          :title="experience.title"
+          :company="experience.company"
+          :technologies="experience.technologies"
+        >
+          {{ experience.text }}
+        </Content>
       </div>
     </div>
     <Title title="project" id="projects" />
-    <div class="WrapperCareer-body">
+    <div class="body">
       <a
         target="_blank"
-        class="WrapperCareer-body-link"
+        class="body__link"
         href="https://github.com/FernandoRogelin/curriculo-website"
-      >Curriculo-website - Repositório que contém todo o meu currículo</a>
+      >
+        Curriculo-website - Repositório que contém todo o meu currículo
+      </a>
     </div>
   </div>
 </template>
@@ -35,31 +39,32 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.WrapperCareer {
-  &-companys {
-    margin-bottom: 40px;
+.companys {
+  margin: 30px 0;
+}
+.body {
+  width: 100%;
+  padding: 20px 0;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $pigeonPost;
   }
 
-  &-body {
-    width: 100%;
-    margin-top: 50px;
+  &__link {
+    color: $calypso;
+    width: fit-content;
+    text-decoration: none;
 
-    &-link {
-      color: $calypso;
-      width: fit-content;
-      text-decoration: none;
+    @media (max-width: $smallViewports) {
+      font-size: 0.8rem;
+    }
 
-      @media (max-width: $smallViewports) {
-        font-size: 0.8rem;
-      }
+    &:hover {
+      border-bottom: 1px solid $calypso;
+    }
 
-      &:hover {
-        border-bottom: 1px solid $calypso;
-      }
-
-      &:not(:last-child) {
-        margin-bottom: 10px;
-      }
+    &:not(:last-child) {
+      margin-bottom: 10px;
     }
   }
 }

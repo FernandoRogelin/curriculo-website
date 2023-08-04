@@ -15,7 +15,7 @@
         <div>
           <ul class="Content-informations-list">
             <li class="Content-informations-list-item">{{ $t("age") }}:
-              <span>25</span>
+              <span>26</span>
             </li>
             <li class="Content-informations-list-item">{{ $t("contact") }}:
               <a href="mailto:fernando.rogelin@hotmail.com">
